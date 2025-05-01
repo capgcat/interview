@@ -36,5 +36,3 @@ This project is a simple REST API built using Python. The API connects to a Post
    - The `--reload` flag enables auto-reload on code changes (useful for development).
    - By default, the app will be available at [http://127.0.0.1:8000](http://127.0.0.1:8000).
 
-3. Visit [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) for the interactive API documentation (Swagger UI).
-
