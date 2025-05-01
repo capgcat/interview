@@ -22,4 +22,19 @@ This project is a simple REST API built using Python. The API connects to a Post
 - At least one POST method to create a record in the DB.
 - Simple unit test.
 - Create a PR from this repo.
-  
+
+## Running the FastAPI App Locally
+
+1. Make sure you have installed all dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Start the FastAPI server using Uvicorn:
+   ```bash
+   hypercorn main:app --reload
+   ```
+   - The `--reload` flag enables auto-reload on code changes (useful for development).
+   - By default, the app will be available at [http://127.0.0.1:8000](http://127.0.0.1:8000).
+
+3. Visit [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) for the interactive API documentation (Swagger UI).
+
