@@ -1,5 +1,5 @@
 from fastapi.testclient import TestClient
-from interview.main import app
+from main import app
 
 client = TestClient(app)
 
@@ -7,6 +7,7 @@ def test_read_main():
     response = client.get("/")
     assert response.status_code == 200
     assert response.json() == {"message": "Welcome to the Capgemini Interview Project API!"}
+
 
 def test_create_user():
     user_data = {"name": "Alice", "email": "alice@example.com"}
@@ -16,6 +17,7 @@ def test_create_user():
     assert data["name"] == user_data["name"]
     assert data["email"] == user_data["email"]
     assert "id" in data
+
 
 def test_get_users():
     response = client.get("/users")

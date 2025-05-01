@@ -44,3 +44,24 @@ This project is a simple REST API built using Python. The API connects to a Post
    - You can use this interface to test API endpoints and view request/response schemas.
    - For the raw OpenAPI JSON schema, visit [http://127.0.0.1:8000/openapi.json](http://127.0.0.1:8000/openapi.json).
 
+## Running Tests Locally
+
+This project uses [pytest](https://pytest.org/) for testing.
+
+1. Make sure you have installed all dependencies (including pytest):
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. Run the tests from the project root directory:
+   ```bash
+   pytest
+   ```
+   - If you encounter import errors, set the PYTHONPATH environment variable:
+     ```bash
+     PYTHONPATH=. pytest
+     ```
+
+- All test files are located in the `interview/tests/` directory.
+- Test results will be shown in the terminal.
+
