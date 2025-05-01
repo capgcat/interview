@@ -29,10 +29,18 @@ This project is a simple REST API built using Python. The API connects to a Post
    ```bash
    pip install -r requirements.txt
    ```
-2. Start the FastAPI server using Uvicorn:
+2. Start the FastAPI server using Uvicorn or Hypercorn:
    ```bash
+   # Using Uvicorn (recommended for FastAPI)
+   uvicorn main:app --reload
+   # Or using Hypercorn
    hypercorn main:app --reload
    ```
    - The `--reload` flag enables auto-reload on code changes (useful for development).
    - By default, the app will be available at [http://127.0.0.1:8000](http://127.0.0.1:8000).
+
+3. Access the Swagger (OpenAPI) documentation:
+   - Open your browser and go to [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) to view the interactive Swagger UI.
+   - You can use this interface to test API endpoints and view request/response schemas.
+   - For the raw OpenAPI JSON schema, visit [http://127.0.0.1:8000/openapi.json](http://127.0.0.1:8000/openapi.json).
 

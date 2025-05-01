@@ -2,3 +2,4 @@ fastapi~=0.110.0
 hypercorn
 pymongo~=4.6.2
 requests~=2.31.0
+uvicorn~=0.29.0

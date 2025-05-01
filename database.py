@@ -3,7 +3,7 @@ import os
 import requests
 from mongo import MongoConnection
 
-MONGODB_URL = os.getenv("MONGODB_URL", "mongodb+srv://karthikkumarkrishnamoorthy:3oMcG5oBZuzoYJJ6@cluster0.sdyfthn.mongodb.net/interview")  # Replace with your actual MongoDB URL
+MONGODB_URL = os.getenv("MONGODB_URL", "mongodb+srv://karthikkumarkrishnamoorthy:3oMcG5oBZuzoYJJ6@cluster0.sdyfthn.mongodb.net")  # Replace with your actual MongoDB URL
 
 class DatabaseService:
     def __init__(self) -> None:
